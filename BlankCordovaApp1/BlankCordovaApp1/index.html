@@ -1,14 +1,31 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en" data-ng-app="App">
 <head>
     <meta charset="utf-8" />
     <title>BlankCordovaApp1</title>
+    \
 
-    <!-- BlankCordovaApp1 references -->
+    <link href="Content/ionic.css" rel="stylesheet" />
+    <script src="scripts/ionic.bundle.js"></script>
+
     <link href="css/index.css" rel="stylesheet" />
+    <script src="scripts/app.js"></script>
+
 </head>
-<body>
-    <p>Hello, your application is ready!</p>
+<body data-ng-controller="AppCtrl">
+    <ion-header-bar class="bar-calm">
+        <h1 class="title">Hello, world!</h1>
+        <button class="button" data-ng-click="refresh()">
+            <i class="icon ion-refresh"></i>
+        </button>
+
+    </ion-header-bar>
+
+    <ion-content>
+        <h1>Some content</h1>
+    </ion-content>
+
+
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
